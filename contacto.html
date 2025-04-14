@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <!-- Link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Oswald:wght@200..700&family=Rubik+Glitch&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+
+    <!-- Link del logo en ventana-->
+    <link rel="icon" href="Imagenes /CREO5 LOGO.PNG">
+
+    <title>Contacto Creo5!!</title>
+</head>
+<body>
+    <header class="encabezado-home">
+        <nav class="nav-paginaweb">
+            <ul class="paginaweb-navlist">
+                <li class="paginaweb-itemnav"><a href="contacto.html">Contactanos</a></li>
+                <li class="paginaweb-itemnav"><a href="artistas.html">Artistas</a></li>
+                <li class="paginaweb-itemnav"><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <div class="contenedor-logo">
+            <img class="logo-encabezado" src="Imagenes /CREO5 LOGO.PNG" alt="Logo productora">
+        </div>
+        <nav class="nav-rrss">
+            <ul class="rrss-navlist">
+                <li class="rrss-itemnav"><a href="#">IG</a></li>
+                <li class="rrss-itemnav"><a href="#">FB</a></li>
+                <li class="rrss-itemnav"><a href="#">TK</a></li>
+                <li class="rrss-itemnav"><a href="#">YT</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <h1 class="titulo-contactopag"> Hola! En que podemos ayudarte?</h1>
+
+    <p class="parrafo-contacto"> Dejanos tus datos y tu consulta por aqui abajo! Trataremos de responderte a la brevedad.. </p>
+
+
+<section class=>
+<!-- EJEMPLO DE FORMULARIO-->
+
+    <form action="/submit" method="post">  
+        <!-- Nos deja crear la casilla del dato que requerimos-->
+        <label for="dato-nombre" >Nombre y Apellido</label>
+        <input type="text" name="nombre" placeholder="Nombre" id="dato-nombre" minlength="4" required> 
+<!--el id conecta la casilla de pregunta con la de respuesta, debe tener lo mismo que el for de label-->
+
+        <label for="dato-mail">Email</label>
+        <input type="email" name="Email" placeholder="Mail" id="dato-mail" required>
+
+        <label for="genero">Genero</label>
+        <select name="pais" id="genero" required>
+                <option value="">Hombre</option>
+                <option value="">Mujer</option>
+                <option value="">Prefiero no decirlo</option>
+
+        </select>
+        
+        <label for="pregunta">Tu consulta</label>
+        <textarea name="Tu consulta" id="pregunta" required></textarea> 
+
+        <input class="boton-formulario" type="submit" value="Enviar"> 
+<!--Este boton del tipo submit me deja enviar los datos a la url especificada en Action-->
+    </form>
+</section>
+
+</body>
+</html>

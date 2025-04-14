@@ -1,0 +1,534 @@
+/* Reset de css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+/* selector + propiedad + valor 
+selector {
+propiedad: valor
+} 
+*/
+
+body { 
+    background-color: #000000;
+    margin: 0;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}  
+
+/* PAGINA PRINCIPAL, HOME (Index)*/ 
+
+.encabezado-home{
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.896)), url(https://images.unsplash.com/photo-1514525253161-7a46d19cd819?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zmllc3RhJTIwbm9jdHVybmF8ZW58MHx8MHx8fDA%3D);
+    background-size: contain;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedor-logo img{
+    max-width: 100%;
+    width: 220px;
+    min-width: 100px;
+    margin: 10px 20px;
+    filter: drop-shadow(0 0 7px #000000);
+    animation-name: motion-logo-header ;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.paginaweb-navlist{
+    width: 100%;
+    list-style: none;
+    text-align: left;
+}
+
+.paginaweb-itemnav a{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 10px;
+    color: #b50f6e;
+    text-shadow: 0 0 7px rgb(0, 0, 0);
+    border-bottom: 2px solid blanchedalmond;
+}
+
+.paginaweb-itemnav a:hover{
+    color: #00ada6;
+    font-weight: 900;
+    border-radius: 7px;
+}
+
+.nav-rrss{
+    text-align: center;
+}
+
+.rrss-navlist{
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    display: flex;
+}
+
+.rrss-itemnav a{
+    text-align: center;
+    text-decoration:none;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 10px;
+    color: #b50f6e;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+    border-bottom: 2px solid blanchedalmond;
+}
+
+.rrss-itemnav a:hover{
+    border-radius: 3px;
+    color: #dbac3b;
+    font-size: 27px;
+    transition-property: font-size;
+    transition-duration: .5s;
+
+}
+
+    .video-home{
+        margin-top: 0px;
+        background-color: #000000;
+    }
+
+    .video-home video{
+        animation-name: motion-video-home ;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+
+    }
+
+
+    .video-home video {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 20px;
+        margin-bottom: 80px;
+        margin-top: 50px;
+        box-sizing: border-box;
+        z-index: 10;
+    }
+
+    section h2
+    {
+color: rgb(254, 251, 251);
+font-size: 31px;
+text-align: ;
+font-family:"Oswald", sans-serif ;
+font-weight: 900;
+font-style: normal;
+letter-spacing: 2px;
+padding-top: 7px;
+padding-left: 10px;
+width: 100%;
+height: 50px;
+border-left: 4px solid rgb(251, 205, 205);
+margin: auto; 
+margin-bottom: 0px;
+    }
+
+            /* Con este buscador la idea es lo pueda asociar con los diferentes eventos que ya fueron y se encuentran en la lista de imagenes de abajo, me gustaria que cada busqueda este discriminada por artistas, lugar*/ 
+
+    .buscador-momento{
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 7px;
+        text-align: center;
+        border: 1px transparent;
+    }
+
+    .buscador-momento input{
+        margin-top: 30px;
+        background-color: transparent;
+        text-align: center;
+        border: 4px solid #ec5c09bf;
+        border-radius: 14px;
+        font-size: 20px;
+        color: orange;
+        box-shadow: 0px 0px 21px white ;
+    }
+
+    nav {
+        background-color: transparent;
+        text-align: center;
+        padding: 0px;
+        margin: auto;
+        margin-bottom: 50px;
+        }
+
+
+    .parrafo-resumen
+    {
+    color: #fab000 ;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    }
+
+    #resumen-eventos 
+    {
+        text-align: center;
+    color: rgb(211, 192, 192);
+    font-weight: 100;
+    font-style: italic;
+    background-color: #000000;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    }
+
+    #resumen-eventos h2{
+        animation-name: motion-moments-title;
+        animation-timeline: scroll();
+    }
+
+
+.eventos-pasados article{
+    width: 70%;
+    border: 1px solid white;
+    margin: auto;
+    margin-bottom: 10px;
+    animation-name: motion-galerys-header;
+    animation-timeline: scroll();
+}
+
+.eventos-pasados button{
+margin: auto;
+border: 2px double goldenrod;
+margin-bottom: 10px;
+background-color: transparent;
+color: white;
+font-weight: 800;
+padding: 7px;
+box-shadow: 0 0 7px 1px rgba(255, 255, 0, 0.63);
+border-radius: 7px;
+}
+
+button:hover{
+    background-color: rgba(128, 128, 128, 0.424);
+    color: red;
+    outline: 2px solid rgb(255, 38, 0);
+}
+
+    .eventos-pasados img{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+
+
+
+                    /* ESTA ES LA SECCION DE PAGINA Contacto (todo se encuentra discrimado por clases)*/
+
+    .encabezado-contacto{
+        background-image: url(https://www.teleantioquia.co/wp-content/uploads/2024/08/Concierto-Feria-de-las-Flores.png);
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 100px;
+    }
+
+
+    
+    .titulo-contactopag 
+    {
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 2px;
+        background-color: #00ada6 ;
+        font-size: 41px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border-top: 2px double whitesmoke;
+        border-bottom: 2px double whitesmoke;
+
+    }
+
+    .barra-contacto{
+        margin-top: 0;
+        background-color: #0000006c;
+        margin-bottom: 0;
+    }
+
+    .barra-contacto li{
+        list-style: none;
+    }
+
+    .box-contacto {
+        height: 300px;
+        width: 100%;
+        background-color:wheat ;
+        margin: 0;
+        margin-top: 10px;
+        background-image: url(https://www.teleantioquia.co/wp-content/uploads/2024/08/Concierto-Feria-de-las-Flores.png);
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+    .parrafo-contacto 
+    { text-align: center;
+        text-transform:unset;
+        color: #d9b800 ;
+        padding: 7px;
+        letter-spacing: 2px;
+        
+    }
+
+    label
+    {
+        color: white;
+        text-transform: uppercase;
+    }
+
+    form
+    {
+        width: 830px;
+        height: 300px;
+        background-color: #00ada6;
+        padding: 20px;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        margin: auto;    
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border: 7px solid whitesmoke;
+        border-radius: 7px 30px 5px 0;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 20px #00ada6;
+    }
+    input
+    { width: 70%;
+    padding: 7px;
+    margin: 3px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: gainsboro;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    }
+
+    .boton-formulario{
+        letter-spacing: 2px;
+        font-family: "Oswald", sans-serif;
+        text-transform:uppercase;
+        width: 20%;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px black;
+        background-color: rgba(0, 128, 0, 0.173);
+    }
+
+    textarea 
+    { border: 4px double black;
+        padding: 7px;
+        margin-top: 35px;
+        margin-right: 15px;
+        width: 200px;
+        height: 100px;
+        box-sizing: border-box;
+
+    }
+
+
+    /* Esta es la pagina de Artistas */ 
+
+
+    .encabezado-artistas{
+        background-image: url(https://www.teleantioquia.co/wp-content/uploads/2024/08/Concierto-Feria-de-las-Flores.png);
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 200px;
+        top: 0px;
+        z-index: 10;
+    }
+    
+    .boton-desplegable{
+        background-color: rgba(245, 222, 179, 0.533);
+        border: 2px solid yellow;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 20px;
+        font-weight: 900;
+        box-shadow: 0 0 15px 2px yellow;
+    }
+
+
+
+    .lista-navegacion{
+        margin-top: 70px;
+    }
+
+    .item-navegacion{
+        display: inline-block;
+        padding: 10px;
+        background-color: #0000009b;
+    }
+
+    .link-navegacion:hover{
+        background-color: rgba(255, 166, 0, 0.584);
+    }
+
+    .link-navegacion{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+
+    .titulos-artistas {
+        color: whitesmoke;
+        text-shadow: 0px 3px 17px #ff7300;
+        font-size: 70px;
+        text-align: center;
+        border-bottom: 1px solid white;
+        border-radius: 4px;
+        max-width: 600px;
+        max-height: 120px;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
+
+    .imagenes-carrusel-slide{
+        width: 60%;
+        max-height: 800px;
+        min-height: 300px;
+    }
+
+.info-artistas{
+    text-align: center;
+}
+    .parrafos-artistas{
+        color: #bbdfde;
+        text-shadow: 0px 0px 21px blue;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: 70px;
+    }
+
+    .boton-artista{
+        width: 100px;
+        height: 50px;
+        box-shadow: 0px 0px 10px 3px white;
+        font-weight: 900;
+        color: white;
+        border-radius: 10px;
+        border: 3px solid rgb(255, 255, 255);
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+
+
+
+
+/* Esta es la seccion de diseños media querys */
+
+/* Pagina Principal */
+
+@media screen and (max-width: 501px) {
+    .encabezado-home{
+        height: auto;
+        flex-direction: column;
+        background-size: cover;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+}
+    .paginaweb-itemnav a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px;
+        color: #b50f6e;
+        text-shadow: 0 0 7px rgb(0, 0, 0);
+        border-bottom: 2px solid blanchedalmond;
+}
+    .paginaweb-navlist{
+        display: flex;
+        margin-top: 100px;
+}
+    .rrss-navlist{
+        margin-top: 100px;
+    }
+}
+
+
+/* Pagina de Artistas */
+@media screen and (max-width: 500px) {
+    .titulos-artistas{
+        font-size: 55px;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .barra-artistas{
+        width: 60%;
+        height: auto;
+    }
+}
+
+/* Pagina Contacto */
+@media screen and (max-width: 500px) {
+    form{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .boton-formulario{
+        margin-bottom: 20px;
+    }
+
+    }
+
+
+
+    /* SECTOR DE ANIMACIONES */
+    @keyframes motion-logo-header {
+        from {opacity:0%;}
+        to{opacity: 100%;}
+    }
+
+    @keyframes motion-video-home {
+        from {opacity:0%;
+        width: 10%;}
+        to{opacity: 100%;
+        width: 80%;}
+    }
+
+    @keyframes motion-moments-title {
+        from {opacity:60%;
+        width: 50%;}
+        to {opacity: 100%;
+        width: 100%;}
+    }
+
+    @keyframes motion-galerys-header {
+        from {opacity:0%;
+        width: ;: 0%;}
+        to{opacity: 100%;
+        width: ;: 100%;}
+    }
