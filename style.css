@@ -400,11 +400,10 @@ button:hover{
     }
 
     .titulos-artistas {
-        color: whitesmoke;
-        text-shadow: 0px 3px 17px #ff7300;
+        color: #dbac3b;
+        text-shadow: 0px 3px 12px #98816f;
         font-size: 70px;
         text-align: center;
-        border-bottom: 1px solid white;
         border-radius: 4px;
         max-width: 600px;
         max-height: 120px;
@@ -442,6 +441,33 @@ button:hover{
         border: 3px solid rgb(255, 255, 255);
         text-transform: uppercase;
         background-color: transparent;
+    }
+
+
+    /* La idea de esto es que cuando se seleccione un artista salga toda la data del mismo, para brindarle mas informacion al usuario, por ejemplo un enlace de video o un video breve. Junto con un pequeño formulario para enviar los datos para poder presupuestar*/ 
+
+    .conteiner-data-presupuestos{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .titulo-data-presupuestos{
+        color: whitesmoke;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 0 0 14px white;
+    }    
+
+    .parrafo-data-presupuestos{
+        color: #dbac3b ;
+    }
+
+    .barra-data-presupuestos{
+        color: #040404 ;
     }
 
 
