@@ -81,7 +81,6 @@ body {
     margin: 10px;
     color: #b50f6e;
     text-shadow: 0px 0px 7px rgb(0, 0, 0);
-    border-bottom: 2px solid blanchedalmond;
 }
 
 .rrss-itemnav a:hover{
@@ -119,20 +118,20 @@ body {
 
     section h2
     {
-color: rgb(254, 251, 251);
-font-size: 31px;
-text-align: ;
-font-family:"Oswald", sans-serif ;
-font-weight: 900;
-font-style: normal;
-letter-spacing: 2px;
-padding-top: 7px;
-padding-left: 10px;
-width: 100%;
-height: 50px;
-border-left: 4px solid rgb(251, 205, 205);
-margin: auto; 
-margin-bottom: 0px;
+        color: rgb(254, 251, 251);
+        font-size: 31px;
+        text-align: ;
+        font-family:"Oswald", sans-serif ;
+        font-weight: 900;
+        font-style: normal;
+        letter-spacing: 2px;
+        padding-top: 7px;
+        padding-left: 10px;
+        width: 100%;
+        height: 50px;
+        border-left: 4px solid rgb(251, 205, 205);
+        margin: auto; 
+        margin-bottom: 0px;
     }
 
             /* Con este buscador la idea es lo pueda asociar con los diferentes eventos que ya fueron y se encuentran en la lista de imagenes de abajo, me gustaria que cada busqueda este discriminada por artistas, lugar*/ 
@@ -201,6 +200,12 @@ margin-bottom: 0px;
     margin-bottom: 10px;
     animation-name: motion-galerys-header;
     animation-timeline: scroll();
+}
+
+.parrafo-resumen{
+    color: rgb(255, 255, 255) ;
+    text-align: center;
+    text-shadow: 0 0 7px pink;
 }
 
 .eventos-pasados button{
@@ -413,11 +418,21 @@ button:hover{
     }
 
 
-    .imagenes-carrusel-slide{
-        width: 60%;
-        max-height: 800px;
-        min-height: 300px;
+    
+    #carouselExample{
+        width: 70%;
+        height: auto;
+        box-sizing: border-box;
+        margin: auto;
     }
+
+    .carousel-item img{
+        object-fit:cover;
+        width: 70%;
+        max-height: 500px ;
+    }
+
+
 
 .info-artistas{
     text-align: center;
@@ -460,6 +475,7 @@ button:hover{
         font-weight: 400;
         font-style: normal;
         text-shadow: 0 0 14px white;
+        text-transform: uppercase;
     }    
 
     .parrafo-data-presupuestos{
@@ -502,6 +518,13 @@ button:hover{
     .rrss-navlist{
         margin-top: 100px;
     }
+
+    .titulo-buscadormomento{
+        font-size: 21px;
+    }
+
+    .eventos-pasados article{
+        width: 100%;
 }
 
 
