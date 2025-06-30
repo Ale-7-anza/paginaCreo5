@@ -110,6 +110,10 @@ body {
         height: auto;
         margin: auto;
         padding: 20px;
+<<<<<<< HEAD
+=======
+        margin-bottom: 80px;
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
         margin-top: 50px;
         box-sizing: border-box;
         z-index: 10;
@@ -135,7 +139,11 @@ body {
 
             /* Con este buscador la idea es lo pueda asociar con los diferentes eventos que ya fueron y se encuentran en la lista de imagenes de abajo, me gustaria que cada busqueda este discriminada por artistas, lugar*/ 
 
+<<<<<<< HEAD
     .contenedor-buscador{
+=======
+    .buscador-momento{
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
         width: 100%;
         margin-bottom: 50px;
         margin-top: 7px;
@@ -143,7 +151,11 @@ body {
         border: 1px transparent;
     }
 
+<<<<<<< HEAD
     .contenedor-buscador input{
+=======
+    .buscador-momento input{
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
         margin-top: 30px;
         background-color: transparent;
         text-align: center;
@@ -154,7 +166,10 @@ body {
         box-shadow: 0px 0px 21px white ;
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
     nav {
         background-color: transparent;
         text-align: center;
@@ -164,18 +179,31 @@ body {
         }
 
 
+<<<<<<< HEAD
     .titulo-tarjeta
     {
     color: #fab000 ;
     text-align: center;
+=======
+    .parrafo-resumen
+    {
+    color: #fab000 ;
+    text-align: left;
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
     font-weight: 700;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     }
 
+<<<<<<< HEAD
     .resumen-artista 
     {
     text-align: center;
+=======
+    #resumen-eventos 
+    {
+        text-align: center;
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
     color: rgb(211, 192, 192);
     font-weight: 100;
     font-style: italic;
@@ -183,16 +211,25 @@ body {
     padding: 30px;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     gap: 20px;
     }
 
     .resumen-artista h2{
         margin: 0;
+=======
+    align-items: flex-start;
+    gap: 20px;
+    }
+
+    #resumen-eventos h2{
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
         animation-name: motion-moments-title;
         animation-timeline: scroll();
     }
 
 
+<<<<<<< HEAD
     .carrusel-artistas { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -211,6 +248,13 @@ body {
     width: 80%;
     border: 1px solid white;
     margin-top: 10px;
+=======
+.eventos-pasados article{
+    width: 70%;
+    border: 1px solid white;
+    margin: auto;
+    margin-bottom: 10px;
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
     animation-name: motion-galerys-header;
     animation-timeline: scroll();
 }
@@ -221,7 +265,11 @@ body {
     text-shadow: 0 0 7px pink;
 }
 
+<<<<<<< HEAD
 .carrusel-artistas button{
+=======
+.eventos-pasados button{
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
 margin: auto;
 border: 2px double goldenrod;
 margin-bottom: 10px;
@@ -239,6 +287,7 @@ button:hover{
     outline: 2px solid rgb(255, 38, 0);
 }
 
+<<<<<<< HEAD
 
 
 .pantalla-transicion {            /* Transicion en carrusel de artistas */
@@ -259,6 +308,13 @@ button:hover{
     pointer-events: all;
 }
 
+=======
+    .eventos-pasados img{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
 
 
 
@@ -343,7 +399,11 @@ button:hover{
         margin: auto;    
         margin-top: 40px;
         margin-bottom: 20px;
+<<<<<<< HEAD
 
+=======
+        border: 7px solid whitesmoke;
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
         border-radius: 7px 30px 5px 0;
         box-sizing: border-box;
         box-shadow: 0px 0px 20px #00ada6;
@@ -516,6 +576,7 @@ button:hover{
 
 
 
+<<<<<<< HEAD
 /* Seccion de Paginas INTERNAS de ARTISTAS */
 
 .titulo-pagKijanos{ 
@@ -680,6 +741,10 @@ border-radius: 4px;
 
 
                                                                 /* Esta es la seccion de diseños media querys */
+=======
+
+/* Esta es la seccion de diseños media querys */
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
 
 /* Pagina Principal */
 
@@ -705,6 +770,7 @@ border-radius: 4px;
         display: flex;
         margin-top: 100px;
 }
+<<<<<<< HEAD
 
 
 .nav-rrss{
@@ -744,6 +810,18 @@ border-radius: 4px;
 
 
 
+=======
+    .rrss-navlist{
+        margin-top: 100px;
+    }
+
+    .titulo-buscadormomento{
+        font-size: 21px;
+    }
+
+    .eventos-pasados article{
+        width: 100%;
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
 }
 
 
@@ -755,7 +833,11 @@ border-radius: 4px;
         margin-top: 0px;
     }
     .barra-artistas{
+<<<<<<< HEAD
         width: 50%;
+=======
+        width: 60%;
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
         height: auto;
     }
 }
@@ -774,6 +856,7 @@ border-radius: 4px;
 
 
 
+<<<<<<< HEAD
     /* Pagina Interna Artistas */
 
     @media screen and (max-width: 501px) {
@@ -879,6 +962,8 @@ border-radius: 4px;
 
 
 
+=======
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
     /* SECTOR DE ANIMACIONES */
     @keyframes motion-logo-header {
         from {opacity:0%;}
@@ -904,6 +989,7 @@ border-radius: 4px;
         width: ;: 0%;}
         to{opacity: 100%;
         width: ;: 100%;}
+<<<<<<< HEAD
     }
 
     @keyframes motion-titulo-kijanos {
@@ -919,4 +1005,6 @@ border-radius: 4px;
 
     footer{
         width: 100%;
+=======
+>>>>>>> 5bf720060431ff3aed8412f25c46160e22509a10
     }
