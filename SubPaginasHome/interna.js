@@ -24,20 +24,27 @@ alert(`Por favor completá el campo "${campo}"`);
 
 if (error) return;
 
+localStorage.setItem("formularioArtista", JSON.stringify(datos));
+
+alert("¡Datos guardados correctamente!");
+formulario.reset();
+
 const mensaje = `Hola! Soy ${datos.Nombre}, mi correo es ${datos.mail}, mi número es ${datos.numero} y quiero preguntar: ${datos.texto}`;
 
   const telefono = "5493827668399"; // Reemplazá esto por tu número real sin espacios
 
 const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 
-  // MOSTRAR ANIMACIÓN
-mensajeExito.classList.add("mostrar");
+mensajeExito.classList.add("mostrar"); // MOSTRAR ANIMACIÓN
 
-  // Esperar 2 segundos y luego redirigir
-setTimeout(() => {
+
+setTimeout(() => {    // Esperar 1 segundo y luego redirigir
     mensajeExito.classList.remove("mostrar");
     window.open(url, "_blank");
-}, 2000);
+}, 1000);
 
 formulario.reset();
+
+
+
 });

@@ -52,6 +52,14 @@ input.addEventListener("input", ()=> {
 });
 
 
+// Muestro Mensaje de Bienvenida solo una vez
+
+window.addEventListener("DOMContentLoaded", () => {
+    if (!localStorage.getItem("bienvenidaMostrada")) {
+    alert("¡Bienvenido/a a nuestra web! 🎶");
+    localStorage.setItem("bienvenidaMostrada", "true");
+    }
+});
 
 
 
