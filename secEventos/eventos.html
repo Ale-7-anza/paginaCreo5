@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/Imagenes /CREO5 LOGO.PNG">
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="encabezado-home">
+        <nav class="nav-paginaweb">
+            <ul class="paginaweb-navlist">
+                <li class="paginaweb-itemnav"><a href="/index.html">Inicio</a></li>
+                <li class="paginaweb-itemnav"><a href="/secEventos/eventos.html">Eventos</a></li>
+            </ul>
+        </nav>
+        <div class="contenedor-logo">
+            <img class="logo-encabezado" src="/Imagenes /CREO5 LOGO.PNG" alt="Logo productora">
+        </div>
+        <nav class="nav-rrss">
+            <ul class="rrss-navlist">
+                <li class="rrss-itemnav"><a href="https://www.instagram.com/creo5_producciones/" target="_blank" ><img src="/Imagenes /logo ig png.webp" alt="Instagram" width="70"  height="70"></a></li>
+            <li class="rrss-itemnav"><a href="https://www.facebook.com/Creo5P" target="_blank" ><img src="/Imagenes /logo fb png.webp" alt="Instagram" width="70"  height="70"></a></li>
+            <li class="rrss-itemnav"><a href="https://www.tiktok.com/@creo5producciones7?lang=es" target="_blank" ><img src="/Imagenes /logo tiktok png.webp" alt="Instagram" width="70"  height="70"></a></li>
+            <li class="rrss-itemnav"><a href="https://www.youtube.com/@Creo5Producciones" target="_blank" ><img src="/logo yt.webp" alt="Instagram" width="80"  height="80"></a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section class="eventos-futuros">
+        <h1>Proximos Eventos</h1>
+
+        <div class="lista-eventos">
+
+            <div class="evento-card">
+                <img src="/secEventos/imgEvent/Flyer Sabroso.jpeg" alt="Sabroso" class="evento-img">
+                <h2>Sabroso Dia del Amigo</h2>
+                <p>📅 Fecha: 20 de Julio 2025</p>
+                <p>📍 Lugar: Club San Francisco, Aimogasta - La Rioja</p>
+                <p>🎟️ Precio: Desde $12000</p>
+                <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+            </div>
+
+            <div class="evento-card">
+                <img src="/secEventos/imgEvent/flyer Kijanos poncho.jpg" alt="Los Kijanos" class="evento-img">
+                <h2>Kijanos Festival del Poncho</h2>
+                <p>📅 Fecha: 24 de Julio 2025</p>
+                <p>📍 Lugar: Predio Ferial, Catamarca - Catamarca</p>
+                <p>🎟️ Precio: Desde $15000</p>
+                <button class="agregar-carrito" data-id="2">Agregar al Carrito</button>
+            </div>
+
+            <div class="evento-card">
+                <img src="/secEventos/imgEvent/flyer Ulises poncho.jpg" alt="Ulises Bueno" class="evento-img">
+                <h2>Ulises Bueno</h2>
+                <p>📅 Fecha: 20 de Julio 2025</p>
+                <p>📍 Lugar: Predio Ferial, Catamarca - Catamarca</p>
+                <p>🎟️ Precio: Desde $16000</p>
+                <button class="agregar-carrito" data-id="3">Agregar al Carrito</button>
+            </div>
+
+        </div>
+
+        <div class="carrito">
+            <h2>🛒 Tu Carrito</h2>
+            <ul id="lista-carrito"> </ul>
+            <p>Total: $<span id="total-carrito">0</span></p>
+            <button id="comprar">Finalizar Compra</button>
+        </div>
+
+    </section>
+
+    <script src="/secEventos/event.js"></script>
+</body>
+</html>

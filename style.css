@@ -304,6 +304,81 @@ button:hover{
 
 
 
+/* Pagina Eventos y Carrito de Compras */
+
+.eventos-futuros { 
+    padding: 20px;
+    background: #2b2540;
+}
+
+.eventos-futuros h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.lista-eventos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.evento-card{ 
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.evento-card h2{ 
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #b50f6e;
+}
+
+
+.evento-img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+}
+
+.agregar-carrito {
+    margin-top: 10px;
+    background-color:#28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito{ 
+    margin-top: 40px;
+    background-color: #c49b4f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Seccion de Paginas INTERNAS de ARTISTAS */
 
