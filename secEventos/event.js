@@ -94,3 +94,47 @@ function mostrarCarrito (){
     }
 }
 
+
+function realizarCompra() {
+    if (carrito.length === 0) {
+      // Carrito vacío
+    Swal.fire({
+        title: 'Carrito vacío',
+        text: 'No has seleccionado ningún evento para comprar.',
+        icon: 'error',
+        confirmButtonText: 'Entendido',
+        background: '#111',
+        color: '#fff',
+        confirmButtonColor: '#ff0055'
+    })
+    } else {  // Confirmación de compra
+    Swal.fire({
+        title: '¿Confirmás la compra?',
+        text: `Estás a punto de comprar ${carrito.length} entradas.`,
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#00cc66',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí, comprar',
+        cancelButtonText: 'Cancelar',
+        background: '#111',
+        color: '#fff'
+    }).then((result) => {
+        if (result.isConfirmed) {           // Compra realizada
+        Swal.fire({
+            title: '¡Compra realizada!',
+            text: 'Tus entradas han sido reservadas con éxito.',
+            icon: 'success',
+            confirmButtonText: 'Genial',
+            background: '#111',
+            color: '#fff',
+            confirmButtonColor: '#6600ff'
+        });
+
+        carrito = [];    // Vacia el carrito después de la compra
+        localStorage.removeItem('carrito');
+          actualizarVistaCarrito(); // si tenés una función para refrescar la UI
+        }
+    });
+    }
+}
