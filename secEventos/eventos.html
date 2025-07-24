@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../Imagenes /CREO5 LOGO.PNG">
+    <!-- CDN API MAP-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" >
 
 
     <title>Document</title>
@@ -48,6 +50,8 @@
                 <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
             </div>
 
+
+
             <div class="evento-card">
                 <img src="/secEventos/imgEvent/flyer Kijanos poncho.jpg" alt="Los Kijanos" class="evento-img">
                 <h2>Kijanos Festival del Poncho</h2>
@@ -72,8 +76,14 @@
             <h2>🛒 Tu Carrito</h2>
             <ul id="lista-carrito"> </ul>
             <p>Total: $<span id="total-carrito">0</span></p>
+            <div class="form-group">
+                <label for="emailComprador" style="color: white;">Correo electrónico</label>
+                <input type="email" id="emailComprador" name="emailComprador" required placeholder="tuemail@ejemplo.com" />
+            </div>
             <button class="comprar" onclick="realizarCompra()">Finalizar Compra</button>
         </div>
+
+
 
     </section>
 
@@ -109,6 +119,41 @@
         spacing: 18.0
         })
         </script>
+
+        <!--API email-->
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+emailjs.init('8PtHYk_TKj8b2lX5t'); 
+
+document.getElementById('formularioEmail').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('tu_service_id', 'tu_template_id', this)
+    .then(function() {
+        Swal.fire({
+        title: 'Mensaje enviado',
+        text: 'Gracias por contactarte, te responderemos pronto.',
+        icon: 'success',
+        background: '#111',
+        color: '#fff',
+        confirmButtonColor: '#00cc66'
+        });
+    }, function(error) {
+        Swal.fire({
+        title: 'Error',
+        text: 'Hubo un problema al enviar el mensaje. Intentalo de nuevo.',
+        icon: 'error',
+        background: '#111',
+        color: '#fff',
+        confirmButtonColor: '#ff0055'
+        });
+    });
+});
+</script>
+
+        
+
 
 
 </body>

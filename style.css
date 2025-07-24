@@ -585,10 +585,11 @@ border-radius: 4px;
         margin: 10px;
         color: #b50f6e;
         text-shadow: 0 0 7px rgb(0, 0, 0);
-        border-bottom: 2px solid blanchedalmond;
+        border-bottom: none;
 }
     .paginaweb-navlist{
         display: flex;
+        flex-direction: column;
         margin-top: 100px;
         }}
 
@@ -622,11 +623,23 @@ border-radius: 4px;
     }
 
 
-
+    .nav-rrss{
+        text-align: center;
+    }
+    
 
     .rrss-navlist{
-        margin-top: 100px;
+        margin-top: 1px;
+        width: 50%;
+        list-style: none;
+        text-align: center;
+        display: grid;
+        gap: 0;
     }
+
+    .rrss-itemnav a{
+        }
+    
 
     .titulo-buscadormomento{
         font-size: 21px;
@@ -636,6 +649,30 @@ border-radius: 4px;
         width: 100%;
 
 }
+
+.encabezado-home{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.592)), url(https://images.unsplash.com/photo-1514525253161-7a46d19cd819?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zmllc3RhJTIwbm9jdHVybmF8ZW58MHx8MHx8fDA%3D);
+    background-size: contain;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.contenedor-logo img{
+    max-width: 100%;
+    width: 100px;
+    margin: 10px 20px;
+    filter: drop-shadow(0 0 7px #000000);
+    animation-name: motion-logo-header ;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+
+
 
 
 /* Pagina de Artistas */

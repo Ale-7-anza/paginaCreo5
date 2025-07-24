@@ -1,7 +1,7 @@
 const eventos = [
-    { id: 1, nombre: "Sabroso Dia del Amigo", precio:14000},
-    { id: 2, nombre: "Los Kijanos Festival del Poncho", precio:14000},
-    { id: 3, nombre: "Ulises Bueno, Catamarca", precio:16000}
+    { id: 1, nombre: "Sabroso Dia del Amigo", precio:14000, ubicacion: {lat: -29.4131,lng: -66.8509},spotify:""},
+    { id: 2, nombre: "Los Kijanos Festival del Poncho", precio:14000, ubicacion: {lat: -29.4131,lng: -66.8509},spotify:""},
+    { id: 3, nombre: "Ulises Bueno, Catamarca", precio:16000, ubicacion: {lat: -29.4131,lng: -66.8509},spotify:""}
 ]; 
 
 
@@ -94,10 +94,10 @@ function mostrarCarrito (){
     }
 }
 
-
 function realizarCompra() {
+    const emailComprador = document.getElementById('emailComprador').value.trim();
+
     if (carrito.length === 0) {
-      // Carrito vacío
     Swal.fire({
         title: 'Carrito vacío',
         text: 'No has seleccionado ningún evento para comprar.',
@@ -106,8 +106,18 @@ function realizarCompra() {
         background: '#111',
         color: '#fff',
         confirmButtonColor: '#ff0055'
-    })
-    } else {  // Confirmación de compra
+    });
+    } else if (!emailComprador) {
+    Swal.fire({
+        title: 'Falta el correo electrónico',
+        text: 'Por favor ingresá tu correo antes de continuar.',
+        icon: 'warning',
+        confirmButtonText: 'Ok',
+        background: '#111',
+        color: '#fff',
+        confirmButtonColor: '#ffaa00'
+    });
+    } else {
     Swal.fire({
         title: '¿Confirmás la compra?',
         text: `Estás a punto de comprar ${carrito.length} entradas.`,
@@ -120,7 +130,10 @@ function realizarCompra() {
         background: '#111',
         color: '#fff'
     }).then((result) => {
-        if (result.isConfirmed) {           // Compra realizada
+        if (result.isConfirmed) {
+          // Aquí podés enviar el email con EmailJS también
+        enviarEmailCompra(emailComprador, carrito);
+
         Swal.fire({
             title: '¡Compra realizada!',
             text: 'Tus entradas han sido reservadas con éxito.',
@@ -131,10 +144,28 @@ function realizarCompra() {
             confirmButtonColor: '#6600ff'
         });
 
-        carrito = [];    // Vacia el carrito después de la compra
+        carrito = [];
         localStorage.removeItem('carrito');
-          actualizarVistaCarrito(); // si tenés una función para refrescar la UI
+        actualizarVistaCarrito();
+          document.getElementById('emailComprador').value = ''; // Limpiar el campo
         }
     });
     }
 }
+
+function enviarEmailCompra(email, carrito) {
+    const eventosComprados = carrito.map((item, index) => `${index + 1}. ${item.nombre} - ${item.fecha}`).join('\n');
+
+    const templateParams = {
+    user_email: email,
+    mensaje: `Se realizó una compra con los siguientes eventos:\n${eventosComprados}`
+    };
+
+    emailjs.send('8PtHYk_TKj8b2lX5t', 'template_5cqtn7i', templateParams)
+    .then(() => {
+        console.log('Email enviado correctamente');
+    }, (error) => {
+        console.error('Error al enviar email:', error);
+    });
+}
+
